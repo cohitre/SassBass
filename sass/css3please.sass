@@ -7,11 +7,8 @@
   -webkit-border-radius: $radius
   border-radius: $radius
 
-=box-shadow($h_offset, $v_offset, $blur, $color)
+=box-shadow($h_offset=0, $v_offset=0, $blur=5px, $color=#888)
   -moz-box-shadow: $h_offset $v_offset $blur $color
   -webkit-box-shadow: $h_offset $v_offset $blur $color
   box-shadow: $h_offset $v_offset $blur $color
 
-.round
-  +box-round(5px)
-  +box-shadow(0, 0, 5px, #999)

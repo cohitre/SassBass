@@ -1,0 +1,10 @@
+These are SASS files that I commonly use. Some of them are SASS versions of CSS files while others are collections of mixins and utilities.
+
+reset.sass
+A sass version of the YUI reset file.
+
+css3please.sass
+Mixin versions of the classes in css3please.com
+
+simple_mixins.sass
+Abbreviations of common CSS properties. Just in the purpose of saving keystrokes.

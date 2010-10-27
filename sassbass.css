@@ -1,0 +1,119 @@
+/*Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+ *Code licensed under the BSD License:
+ *http://developer.yahoo.com/yui/license.html
+ *version: 2.8.1 */
+html, body {
+  padding: 0;
+  margin: 0; }
+
+h1 {
+  font-size: 138.5%; }
+
+h2 {
+  font-size: 123.1%; }
+
+h3 {
+  font-size: 108%; }
+
+h1, h2, h3 {
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6, strong, dt {
+  font-weight: bold; }
+
+optgroup {
+  font-weight: normal; }
+
+abbr, acronym {
+  border-bottom: 1px dotted black;
+  cursor: help; }
+
+em {
+  font-style: italic; }
+
+del {
+  text-decoration: line-through; }
+
+blockquote, ul, ol, dl {
+  margin: 0; }
+
+ol, ul, dl {
+  margin: 0;
+  padding: 0; }
+
+ol li {
+  list-style: none outside; }
+
+ul li {
+  list-style: none outside; }
+
+dl dd {
+  margin-left: 1em; }
+
+th, td {
+  border: 1px solid black;
+  padding: 0.5em; }
+
+th {
+  font-weight: bold;
+  text-align: center; }
+
+caption {
+  margin-bottom: 0.5em;
+  text-align: center; }
+
+sup {
+  vertical-align: super; }
+
+sub {
+  vertical-align: sub; }
+
+p, fieldset, table, pre {
+  margin: 0; }
+
+button {
+  padding: 1px; }
+
+input[type="checkbox"], input[type="radio"], input[type="reset"], input[type="submit"] {
+  padding: 1px; }
+
+/* cross-browser implementations of css3 features
+ * based off css3please.com. */
+.comment {
+  color: #999988; }
+
+.selector {
+  color: navy; }
+
+.property, .mixin {
+  font-weight: bold; }
+  .property .arguments, .mixin .arguments {
+    font-weight: normal; }
+
+body {
+  font-family: "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+  width: 800px;
+  margin: 0 auto; }
+
+.sample {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #dddddd;
+  border: 1px solid #c4c4c4;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: relative;
+  width: auto;
+  height: 100px; }
+
+.mixin-absolute {
+  -moz-box-shadow: 0 0 5px #888888;
+  -webkit-box-shadow: 0 0 5px #888888;
+  box-shadow: 0 0 5px #888888;
+  font-family: "Bitstream Vera Sans Mono", Courier, monospace;
+  background-color: #83a0b2;
+  border: 1px solid #64889e;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  white-space: pre; }

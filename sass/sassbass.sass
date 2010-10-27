@@ -1,0 +1,36 @@
+// stylesheet to test the sass bass stylesheets
+
+@import reset
+@import simple_mixins
+@import css3please
+
+// syntax highlighting
+.comment
+  color: #998
+
+.selector
+  color: navy
+
+.property, .mixin
+  font-weight: bold
+  .arguments
+    font-weight: normal
+
+body
+  +sans-serif
+  width: 800px
+  margin: 0 auto
+
+.sample
+  +box-round(5px)
+  +paint(#ddd)
+  +serif
+  +relative
+  +dim(auto, 100px)
+
+.mixin-absolute
+  +box-shadow
+  +monospace
+  +paint(#83A0B2)
+  +position-tr(10px, 10px)
+  white-space: pre
