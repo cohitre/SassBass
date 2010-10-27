@@ -2,14 +2,16 @@
  * cross-browser implementations of css3 features
  * based off css3please.com.
 
-=box_round(!radius)
-  -moz-border-radius= !radius
-  -webkit-border-radius= !radius
-  border-radius= !radius
+=box-round($radius)
+  -moz-border-radius: $radius
+  -webkit-border-radius: $radius
+  border-radius: $radius
 
-=box_shadow(!h_offset, !v_offset, !blur, !color)
-  -moz-box-shadow = !h_offset !v_offset !blur !color
-  -webkit-box-shadow = !h_offset !v_offset !blur !color
-  box-shadow = !h_offset !v_offset !blur !color
+=box-shadow($h_offset, $v_offset, $blur, $color)
+  -moz-box-shadow: $h_offset $v_offset $blur $color
+  -webkit-box-shadow: $h_offset $v_offset $blur $color
+  box-shadow: $h_offset $v_offset $blur $color
 
-
+.round
+  +box-round(5px)
+  +box-shadow(0, 0, 5px, #999)
