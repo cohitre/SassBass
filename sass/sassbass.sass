@@ -1,8 +1,8 @@
 // stylesheet to test the sass bass stylesheets
-
 @import reset
 @import simple_mixins
 @import css3please
+@import css_buttons
 
 // syntax highlighting
 .comment
@@ -34,3 +34,7 @@ body
   +paint(#83A0B2)
   +position-tr(10px, 10px)
   white-space: pre
+
+.button.minimal
+  +button-minimal
+  width: 100px

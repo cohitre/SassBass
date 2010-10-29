@@ -7,4 +7,7 @@ css3please.sass
 Mixin versions of the classes in css3please.com
 
 simple_mixins.sass
-Abbreviations of common CSS properties. Just in the purpose of saving keystrokes.
+Abbreviations of common CSS properties to save keystrokes and make the code more readable. 
+
+sassbass.sass
+A sample file that uses all the other sass files.

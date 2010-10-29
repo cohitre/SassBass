@@ -1,14 +1,18 @@
-/*
- * cross-browser implementations of css3 features
- * based off css3please.com.
+// cross-browser implementations of css3 features
+// based off css3please.com.
 
 =box-round($radius)
   -moz-border-radius: $radius
   -webkit-border-radius: $radius
   border-radius: $radius
 
-=box-shadow($h_offset=0, $v_offset=0, $blur=5px, $color=#888)
+=box-shadow($h_offset: 0, $v_offset: 0, $blur: 5px, $color: #888)
   -moz-box-shadow: $h_offset $v_offset $blur $color
   -webkit-box-shadow: $h_offset $v_offset $blur $color
   box-shadow: $h_offset $v_offset $blur $color
+
+=box-shadow-inset($h_offset: 0, $v_offset: 0, $arg1: 1px, $blur: 1px, $color: #888)
+  -moz-box-shadow: inset $h_offset $v_offset $arg1 $blur $color
+  -webkit-box-shadow: inset $h_offset $v_offset $arg1 $blur $color
+  box-shadow: inset $h_offset $v_offset $arg1 $blur $color
 
