@@ -1,37 +1,36 @@
+// Readable fonts
 =sans-serif
   font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif
-
 =serif
   font-family: Georgia,"Times New Roman",Times,serif
-
 =monospace
   font-family: 'Bitstream Vera Sans Mono', Courier, monospace
 
+// Display shorthands
 =inline-block
   display: inline-block
-
 =block
   display: block
-
 =inline
   display: inline
 
+// Position shorthands
 =absolute
   position: absolute
-
 =relative
   position: relative
 
-=position-tl($top, $left)
-  +absolute
-  top: $top
-  left: $left
+// Cursor shorthands
+=pointer 
+  cursor: pointer
+=crosshair
+  cursor: crosshair
 
-=position-tr($top, $right)
-  +absolute
-  top: $top
-  right: $right
+// Font shorthands
+=bold
+  font-weight: bold
 
+//
 =paint($color)
   background-color: $color
   border: 1px solid darken($color, 10%)
@@ -39,5 +38,4 @@
 =dim($width, $height)
   width: $width
   height: $height
-
 

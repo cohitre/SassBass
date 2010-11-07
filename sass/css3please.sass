@@ -16,3 +16,10 @@
   -webkit-box-shadow: inset $h_offset $v_offset $arg1 $blur $color
   box-shadow: inset $h_offset $v_offset $arg1 $blur $color
 
+=box-gradient($bg_color_start, $bg_color_end)
+  background-color: $bg_color_start
+  background-image: -moz-linear-gradient(top, $bg_color_start, $bg_color_end)
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, $bg_color_start),color-stop(1, $bg_color_end))
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='$bg_color_start', EndColorStr='$bg_color_end')
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='$bg_color_start', EndColorStr='$bg_color_end')"
+
