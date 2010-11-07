@@ -1,13 +1,17 @@
 These are SASS files that I commonly use. Some of them are SASS versions of CSS files while others are collections of mixins and utilities.
 
-reset.sass
-A sass version of the YUI reset file.
+## reset.sass
 
-css3please.sass
-Mixin versions of the classes in css3please.com
+This is a SASS version of the yahoo reset file.
 
-simple_mixins.sass
-Abbreviations of common CSS properties to save keystrokes and make the code more readable. 
+## css3please.sass
 
-sassbass.sass
-A sample file that uses all the other sass files.
+Mixins for the classes hosted on css3please.com
+
+## simple_mixins.sass
+
+DRY versions of commonly used CSS properties and patterns to help build pleasing pages faster.
+
+## css3_buttons.sass
+
+Mixins for the buttons created by [ubuwaits](https://github.com/ubuwaits/css3-buttons)
