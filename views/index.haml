@@ -68,13 +68,13 @@
              
             .mixin-dialog
               +absolute
-              +monospace
               +drop-shadow
+              +monospace
               +paint(#ddd)
+              color: #888
               padding: 2px
               right: 10px
               top: 10px
-              color: #888
 
         .mixin-sandbox
           %p 
@@ -91,30 +91,14 @@
       .file-information
         %h2 css3_buttons.sass
         %p Mixins for the buttons created by <a href='https://github.com/ubuwaits/css3-buttons'>ubuwaits</a>
-        %div
-          %span.button.ios-blue
-            ios blue
-          %pre.code-sample
-            :preserve
-              .button.ios-blue
-                +button-ios-blue 
-        .button.ios-purple
-          ios purple
-        .button.ios-yellow
-          ios yellow
-        .button.minimal
-          minimal
-        .button.clean-gray
-          clean gray
-        .button.clean-green
-          clean green
-        .button.pale-blue
-          pale blue
-        .button.blue-pill
-          blue pill
-        .button.dribble
-          dribble
-        .button.slick-black
-          slick black
-        .button.thoughtbot{:disabled => :disabled}
-          thoughtbot
+        
+        :ruby
+          buttons = %w{ios-blue ios-purple ios-yellow minimal clean-gray clean-green pale-blue blue-pill dribble slick-black thoughtbot}
+        - buttons.each do |b|
+          %div
+            %pre.code-sample
+              :preserve
+                .button.#{b}
+                  +button-#{b}
+            %span.button{:class => b}= b.gsub('-', ' ')
+
