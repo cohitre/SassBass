@@ -4,40 +4,117 @@
     %title SassBass test page
     %link{:href => '/sassbass.css', :rel => :stylesheet, :type => 'text/css'}
   %body
-    %h1 SassBass is a collection of useful sass files.
-    %p 
-      These are a collection of files I have gathered from around the web as well as popular CSS libraries converted into SASS format.
+    #contents
+      %h1 SassBass is a collection of useful sass files.
+      %p 
+        These are a collection of files I have gathered from around the web as well as popular CSS libraries converted into SASS format.
 
-    %h2 reset.sass
-    %p This is a SASS version of the yahoo reset file.
+      .file-information
+        %h2 reset.sass
+        %p This is a SASS version of the yahoo reset file.
+        %pre.code-sample
+          @import reset
 
-    %h2 css3please.sass
-    %p Mixins for the classes hosted on <a href='http://css3please.com'>css3please.com</a>
+      .file-information
+        %h2 css3please.sass
+        %p Mixins for the classes hosted on <a href='http://css3please.com'>css3please.com</a>
+        %pre.code-sample
+          :preserve
+            @import css3please
+            .simple-message
+              +box-round(5px)
+              +box-gradient(#fff, #ddd)
+              +box-shadow(0, 0, 3px, #888)
+              border: 1px solid #aaa
+              padding: 10px
 
-    %h2 simple_mixins.sass
-    %p DRY versions of commonly used properties to.
+        .simple-message
+          hello, i am a simple message
 
-    %h2 css3_buttons.sass
-    %p Mixins for the buttons created by <a href='https://github.com/ubuwaits/css3-buttons'>ubuwaits</a>
-    .button.ios-blue
-      ios blue
-    .button.ios-purple
-      ios purple
-    .button.ios-yellow
-      ios yellow
-    .button.minimal
-      minimal
-    .button.clean-gray
-      clean gray
-    .button.clean-green
-      clean green
-    .button.pale-blue
-      pale blue
-    .button.blue-pill
-      blue pill
-    .button.dribble
-      dribble
-    .button.slick-black
-      slick black
-    .button.thoughtbot{:disabled => :disabled}
-      thoughtbot
+
+      .file-information
+        %h2 simple_mixins.sass
+        %p DRY versions of commonly used CSS properties and patterns to help build pleasing pages faster.
+
+
+        %h3 Global mixins
+        %pre.code-sample
+          :preserve
+            @import simple_mixins
+            .mixin-dark
+              +global-style-dark
+
+        .mixin-dark
+          %p this is a test of the global dark mixin
+
+        %pre.code-sample
+          :preserve
+            @import simple_mixins
+            .mixin-light
+              +global-style-light
+
+        .mixin-light
+          %p this is a test of the global light mixin
+           
+        %pre.code-sample
+          :preserve
+            @import simple_mixins 
+            .mixin-sandbox
+              +paint(#97D467)
+              +relative
+              color: darken(#97D467, 20%)
+              padding-right: 50px
+              padding: 10px
+             
+            .mixin-dialog
+              +absolute
+              +monospace
+              +drop-shadow
+              +paint(#ddd)
+              padding: 2px
+              right: 10px
+              top: 10px
+              color: #888
+
+        .mixin-sandbox
+          %p 
+            this is a more complidated test. it uses multiple mixins
+            to create a pretty green box with a small message inside.
+          %p 
+            the message is absolutely positioned and has a drop 
+            shadow.
+
+
+          .mixin-dialog
+            hello
+
+      .file-information
+        %h2 css3_buttons.sass
+        %p Mixins for the buttons created by <a href='https://github.com/ubuwaits/css3-buttons'>ubuwaits</a>
+        %div
+          %span.button.ios-blue
+            ios blue
+          %pre.code-sample
+            :preserve
+              .button.ios-blue
+                +button-ios-blue 
+        .button.ios-purple
+          ios purple
+        .button.ios-yellow
+          ios yellow
+        .button.minimal
+          minimal
+        .button.clean-gray
+          clean gray
+        .button.clean-green
+          clean green
+        .button.pale-blue
+          pale blue
+        .button.blue-pill
+          blue pill
+        .button.dribble
+          dribble
+        .button.slick-black
+          slick black
+        .button.thoughtbot{:disabled => :disabled}
+          thoughtbot

@@ -1,41 +1,63 @@
 // stylesheet to test the sass bass stylesheets
-@import reset
-@import simple_mixins
-@import css3please
-@import css_buttons
+@import ../sass/reset
+@import ../sass/simple_mixins
+@import ../sass/css3please
+@import ../sass/css_buttons
 
-// syntax highlighting
-.comment
-  color: #998
+html
+  +global-style-light
 
-.selector
-  color: navy
-
-.property, .mixin
-  font-weight: bold
-  .arguments
-    font-weight: normal
-
-body
-  +sans-serif
+#contents
   width: 800px
   margin: 0 auto
 
-.sample
-  +box-round(5px)
-  +paint(#ddd)
-  +serif
-  +relative
-  +dim(auto, 100px)
+.file-information
+  +drop-shadow
+  +paint(#fff)
+  margin: 30px 0
+  padding: 20px
 
-.mixin-absolute
-  +box-shadow
+h1, h2, h3
+  +sans-serif
+  color: #333
+
+.code-sample
+  +paint(#ddd)
   +monospace
-  +paint(#83A0B2)
+  margin: 10px 0
+  padding: 10px
   white-space: pre
 
-.button.minimal
-  width: 100px
+
+.simple-message
+  +box-round(5px)
+  +box-gradient(#fff, #ddd)
+  +box-shadow(0, 0, 3px, #888)
+  border: 1px solid #aaa
+  padding: 10px
+
+.mixin-sandbox
+  +paint(#97D467)
+  +relative
+  color: darken(#97D467, 20%)
+  padding-right: 50px
+  padding: 10px
+ 
+.mixin-dialog
+  +absolute
+  +drop-shadow
+  +monospace
+  +paint(#ddd)
+  color: #888
+  padding: 2px
+  right: 10px
+  top: 10px
+
+.mixin-light
+  +global-style-light
+
+.mixin-dark
+  +global-style-dark
 
 .button.ios-blue
   +button-ios-blue

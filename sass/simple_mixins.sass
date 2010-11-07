@@ -1,3 +1,6 @@
+@import css3please
+
+
 // Readable fonts
 =sans-serif
   font-family: 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif
@@ -39,3 +42,17 @@
   width: $width
   height: $height
 
+=drop-shadow
+  +box-shadow(0, 0, 5px, #888)
+
+=global-style-light
+  +serif
+  background-color: #f3f3f3
+  color: #888
+
+=global-style-dark
+  +serif
+  background-color: #333
+  color: #888
+
+  
